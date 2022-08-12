@@ -1,0 +1,6 @@
+name: Reusable Workflow user
+on: [ push ]
+
+jobs:
+ tag:
+  uses: deeptiwa/lambda-self/.github/workflows/main.yml@main
