@@ -27,8 +27,8 @@ jobs:
         id: version
         uses: codacy/git-version@2.5.4
         with:
-          release-branch: ${{inputs.release-branch}}"
-          dev-branch: ${{inputs.dev-branch}}"
+          release-branch: ${{inputs.release-branch}}
+          dev-branch: ${{inputs.dev-branch}}
       - name: Extract branch name
         shell: bash
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
