@@ -4,3 +4,6 @@ on: [ push ]
 jobs:
  tag:
   uses: deeptiwa/lambda-self/.github/workflows/main.yml@main
+  with:
+    release-branch: main
+    dev-branch: develop
